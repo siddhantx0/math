@@ -1,0 +1,10 @@
+(format t "hello mumma1")
+(print "hola, mumma2")
+(print (+ 1 2 3 15 15123213))   ; This will evaluate to 6
+(format t  "~%")
+(defmacro love()
+    '(format t "~%i love lisp~%"))
+(format t "hello mumma3~%") ; ~% for newline
+(let ((message "lexically scoped"))
+    (print message))
+(love)
