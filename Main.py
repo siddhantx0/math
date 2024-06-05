@@ -1,3 +1,4 @@
 import time
 
-print('hello')
+while True:
+    print(time.time())
