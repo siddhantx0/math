@@ -14,6 +14,7 @@ while True:
     if (time.time() % 19 == 0):
         print('hi')
 
+
 # while True:
 #     enc = tiktoken.get_encoding("o200k_base")
 #     assert enc.decode(enc.encode("hello world")) == "hello world"
