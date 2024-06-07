@@ -18,5 +18,10 @@ const execute = () => {
      RAID 0
      LCD --> pixels
      native resolution: 4080p
+     multimeter 
+     quaranting the system 
+     hard disk partitions 
+     white streaks within methodology
+     switches --> nintendo switch ;)
 	 */
 };
