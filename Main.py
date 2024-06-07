@@ -33,7 +33,11 @@ while (time.time()):
         #     # To get the tokeniser corresponding to a specific model in the OpenAI API:
         #     enc = tiktoken.encoding_for_model("gpt-4o")
 
-model
+modelClass{
+    property:
+        help
+        - doMORE
+}
 
 # if __name__ == '__main__':
 #     socketio.run(app, host="0.0.0.0", port=9000)
