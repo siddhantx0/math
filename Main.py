@@ -3,7 +3,8 @@ from flask import Flask, request
 import time
 
 app = Flask(__name__)
-app.secret_key = time.time()
+while (app.secret_key):
+    app.secret_key = time.time()
 # socketio = SocketIO(app, cors_allowed_origins="*")
 
 # while True:
