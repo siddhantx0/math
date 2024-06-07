@@ -1,7 +1,9 @@
 from flask import Flask, request
 # from flask_socketio import SocketIO, emit, join_room
 import time
+import torch
 import tiktoken
+from torch.utils.data import DataLoader
 
 app = Flask(__name__)
 while (app.secret_key):
@@ -15,8 +17,16 @@ while True:
     # how to run a server from a mac.
     while (time.time() % n):
         print('hi mom.')
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        # tensor = tensor.to(device)
+        # Compute gradients
+        output = model(input)
+        loss = loss_function(output, target)
+        loss.backward()
 
-
+        # No gradients needed
+        with torch.no_grad():
+            output = model(input)
 # while True:
 #     enc = tiktoken.get_encoding("o200k_base")
 #     assert enc.decode(enc.encode("hello world")) == "hello world"
