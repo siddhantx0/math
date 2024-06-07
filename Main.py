@@ -18,21 +18,22 @@ while True:
     while (time.time() % n):
         print('hi mom.')
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        # tensor = tensor.to(device)
+        tensor = tensor.to(device)
         # Compute gradients
-        output = model(input)
-        loss = loss_function(output, target)
-        loss.backward()
+        # output = model(input)
+        # loss = loss_function(output, target)
+        # loss.backward()
 
-        # No gradients needed
-        with torch.no_grad():
-            output = model(input)
-# while True:
-#     enc = tiktoken.get_encoding("o200k_base")
-#     assert enc.decode(enc.encode("hello world")) == "hello world"
-#     # To get the tokeniser corresponding to a specific model in the OpenAI API:
-#     enc = tiktoken.encoding_for_model("gpt-4o")
+        # # No gradients needed
+        # with torch.no_grad():
+        # output = model(input)
+        # while True:
+        #     enc = tiktoken.get_encoding("o200k_base")
+        #     assert enc.decode(enc.encode("hello world")) == "hello world"
+        #     # To get the tokeniser corresponding to a specific model in the OpenAI API:
+        #     enc = tiktoken.encoding_for_model("gpt-4o")
 
+model
 
 if __name__ == '__main__':
     socketio.run(app, host="0.0.0.0", port=9000)
