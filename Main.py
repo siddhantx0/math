@@ -30,3 +30,4 @@ if __name__ == '__main__':
 # colloquial
 # makes sense?
 # ALL KV.
+# i do tech consulting.
