@@ -25,5 +25,4 @@ const execute = () => {
      switches --> nintendo switch ;)
 	 */
 	// buy me a PC. (GPU's only)
-	//
 };
