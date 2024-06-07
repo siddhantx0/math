@@ -8,3 +8,4 @@
 (let ((message "lexically scoped"))
     (print message))
 (love)
+{}
