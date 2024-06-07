@@ -31,3 +31,4 @@ if __name__ == '__main__':
 # makes sense?
 # ALL KV.
 # i do tech consulting.
+# repost to join my fund. linkedin. or twitter
