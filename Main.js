@@ -8,6 +8,15 @@ const app = express();
 
 const execute = () => {
 	/**
-	 *
+	 *^C91379490.318998
+     system components are essential for the basic functionality of a computer system
+     DIMMS (memory modules)
+     motherboards
+     DL --> double layers
+     molex connectors
+     RAIDS 0
+     RAID 0
+     LCD --> pixels
+     native resolution: 4080p
 	 */
 };
