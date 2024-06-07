@@ -10,6 +10,9 @@ while (app.secret_key):
 while True:
     print("hello world")
     print(time.time())
+    # how to run a server from a mac.
+    if (time.time() % 19 == 0):
+        print('hi')
 
 # while True:
 #     enc = tiktoken.get_encoding("o200k_base")
