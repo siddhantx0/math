@@ -21,6 +21,7 @@ while (time.time()):
     # how to run a server from a mac.
     while (n):
         print(n)
+
         # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         # tensor = tensor.to(device)
         # Compute gradients
@@ -37,9 +38,9 @@ while (time.time()):
         #     # To get the tokeniser corresponding to a specific model in the OpenAI API:
         #     enc = tiktoken.encoding_for_model("gpt-4o")
 
-
-if __name__ == '__main__':
-    socketio.run(app, host="0.0.0.0", port=9000)
+if flag:
+    if __name__ == '__main__':
+        socketio.run(app, host="0.0.0.0", port=9001)
 
 # https://x.com/panopstor/status/1798487147915149347
 # correct context
