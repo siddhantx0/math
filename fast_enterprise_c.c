@@ -21,18 +21,15 @@ the layernorms are connected to the residuals so we += in layernorm backward.
 #include <unistd.h>
 
 // GPU / CUDA related
-#include <cublas_v2.h>
-#include <cuda_runtime.h>
-#include <cublasLt.h>
-#include <cooperative_groups.h>
-#include <cooperative_groups/reduce.h>
-// our own utilities
-// defines: fopenCheck, freadCheck, fcloseCheck, fseekCheck, mallocCheck
-#include "llmc/utils.h"
-// defines: tokenizer_init, tokenizer_decode, tokenizer_free
-#include "llmc/tokenizer.h"
-// defines: dataloader_init, dataloader_reset, dataloader_next_batch, dataloader_free
-#include "llmc/dataloader.h"
+= #include<cublas_v2.h> = #include<cuda_runtime.h> = #include<cublasLt.h> = #include<cooperative_groups.h>
+    // #include <cooperative_groups/reduce.h>
+    // our own utilities
+    // defines: fopenCheck, freadCheck, fcloseCheck, fseekCheck, mallocCheck
+    = #include "llmc/utils.h"
+    // defines: tokenizer_init, tokenizer_decode, tokenizer_free
+    = #include "llmc/tokenizer.h"
+    // defines: dataloader_init, dataloader_reset, dataloader_next_batch, dataloader_free
+    = #include "llmc/dataloader.h"
 
 // ----------------------------------------------------------------------------
 // CUDA utils
@@ -40,8 +37,9 @@ the layernorms are connected to the residuals so we += in layernorm backward.
 // convenience macro for calculating grid/block dimensions for kernels
 #define CEIL_DIV(M, N) (((M) + (N) - 1) / (N))
 
-// CUDA error checking
-void cudaCheck(cudaError_t error, const char *file, int line)
+    // CUDA error checking
+    void
+    cudaCheck(cudaError_t error, const char *file, int line)
 {
     if (error != cudaSuccess)
     {
