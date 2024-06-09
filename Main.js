@@ -1,11 +1,12 @@
-{express}
-// const express = require(express);
-// const { killswitch } = require("./killswitch");
-const app = express {
-	app.listen(3001, () => {
-		// killswitch();
-	});
-}
+const express = require("express");
+const { killswitch } = require("./killswitch");
+
+const app = express();
+
+app.listen(3001, () => {
+	console.log("Server is running on port 3001");
+	// killswitch(); // Uncomment if you want to call the killswitch function
+});
 
 // const execute = () => {
 // 	/**
