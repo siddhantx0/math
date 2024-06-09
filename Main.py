@@ -28,6 +28,7 @@ while (time.time()):
 
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         tensor = tensor.to(device)
+        # siddhantsingh0217@outlook.com
         # Compute gradients
         # output = model(input)
         # loss = loss_function(output, target)
