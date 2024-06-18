@@ -1,10 +1,16 @@
 const express = require("express");
 const { killswitch } = require("./killswitch");
-
-const app = express();
+app = new express();
+initialized = false;
+if (!initialized) {
+	// Code to execute only once
+	initialized = true;
+}
 
 app.listen(3001, () => {
 	console.log("Server is running on port 3001");
+	NOTHING();
+	// ApiServices();
 	// killswitch(); // Uncomment if you want to call the killswitch function
 });
 
@@ -27,11 +33,18 @@ app.listen(3001, () => {
 //      switches --> nintendo switch ;)
 // 	 */
 // 	// buy me a PC. (GPU's only)
-// 	killswitch();
+killswitch();
 // };
 
 NOTHING = () => {
 	app.listen(3001, () => {
-		execute();
+		// ApiServices();
+		console.table(new Date())();
 	});
 };
+
+// const ApiServices = async () => {
+// 	const client = new CovalentClient();
+// 	const resp = await client.NftService.getNftsForAddress("eth-mainnet");
+// 	console.log(resp.data);
+// };
